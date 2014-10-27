@@ -4,7 +4,7 @@ define('settings', ()->
 		anchor : '#/settings'
 		title : 'Settings'
 		type : 'plugin'
-		icon : 'icon-calendar'
+		icon : 'icon-cog'
 		# initialize plugin,
 		init : ()->
 			console.log 'init'

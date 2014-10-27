@@ -9,7 +9,7 @@
       anchor: '#/settings',
       title: 'Settings',
       type: 'plugin',
-      icon: 'icon-calendar',
+      icon: 'icon-cog',
       init: function() {
         console.log('init');
         define_controller();
