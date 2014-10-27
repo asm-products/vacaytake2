@@ -14,7 +14,8 @@
     config.plugins = {
       user: 'core/plugins/user',
       workspace: 'core/plugins/workspace',
-      calendar : 'app/plugins/calendar'
+      calendar : 'app/plugins/calendar',
+      settings : 'app/plugins/settings'
     };
     return config;
   });
