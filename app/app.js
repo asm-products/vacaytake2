@@ -13,7 +13,8 @@
     config.appName = 'Foundry';
     config.plugins = {
       user: 'core/plugins/user',
-      workspace: 'core/plugins/workspace'
+      workspace: 'core/plugins/workspace',
+      calendar : 'app/plugins/calendar'
     };
     return config;
   });
@@ -29,7 +30,7 @@
     "app_name": "Vacay",
     'synchronous': false
   });
-
+  
   Nimbus.Auth.authorized_callback = function() {
     if (Nimbus.Auth.authorized()) {
       return $("#login_buttons").addClass("redirect");
