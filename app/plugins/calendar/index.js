@@ -7,7 +7,7 @@
     return user_plugin = {
       name: 'calendar',
       anchor: '#/calendar',
-      title: 'calendar',
+      title: 'Calendar',
       type: 'plugin',
       icon: 'icon-calendar',
       init: function() {
