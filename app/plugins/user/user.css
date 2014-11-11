@@ -1,0 +1,60 @@
+.user_listing {
+	background-color: #fff;
+	height: 200px;
+	padding: 15px 16px;
+	border-radius: 5px;
+	width: 160px;
+	text-align: center;
+	position: relative;
+}
+
+.user_listing .pic {
+	height: 60px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.user_listing .pill {
+	margin-left: 0px;
+}
+
+.user_listing .list_menu {
+	display: none;
+	position: absolute;
+	bottom: 0px;
+	width: 160px;
+	left: 0px;
+}
+
+.user_listing .list_menu {
+display: none;
+position: absolute;
+bottom: 0px;
+width: 192px;
+left: 0px;
+display: block;
+border-radius: 0px 0px 5px 5px;
+background-color: #888;
+height: 30px;
+}
+
+
+.user_listing .list_menu a {
+width: 33%;
+text-align: center;
+display: block;
+margin: 0px;
+float: left;
+color: #fff;
+text-decoration: none;
+margin-top: 5px;
+border-right: 1px solid #ddd;
+cursor: pointer;
+}
+
+.user_listing .list_menu a:hover { color: #ddd; }
+
+.user_listing .list_menu a:last-child {
+	width: 32%;
+	border-right: 0px;
+}

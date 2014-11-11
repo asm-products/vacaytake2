@@ -1,9 +1,9 @@
 define('user',['require', 'core/analytic'],(require, analytic)->
 	user_plugin = 	
-		name : 'Employee'
+		name : 'user'
 		_models : {}
 		anchor : '#/user'
-		title : 'Employee'
+		title : 'User'
 		type : 'plugin'
 		order : -12
 		icon : 'icon-user'
