@@ -26,7 +26,7 @@
     'GDrive': {
       'app_id' : '352570516659-acrks13596fp29p8tihdp9mqfq4m1vfk',
       'key': '352570516659-acrks13596fp29p8tihdp9mqfq4m1vfk.apps.googleusercontent.com',
-      "scope": "openid https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/plus.me https://www.googleapis.com/auth/gmail.compose https://www.googleapis.com/auth/gmail.modify https://apps-apis.google.com/a/feeds/domain/"
+      "scope": "scope": "openid https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/plus.me"
     },
     "app_name": "Vacay",
     'synchronous': false
