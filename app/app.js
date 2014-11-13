@@ -24,9 +24,9 @@
 
   Nimbus.Auth.setup({
     'GDrive': {
-      'app_id' : '352570516659-acrks13596fp29p8tihdp9mqfq4m1vfk',
+      'app_id' : '352570516659',
       'key': '352570516659-acrks13596fp29p8tihdp9mqfq4m1vfk.apps.googleusercontent.com',
-      "scope": "scope": "openid https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/plus.me"
+      "scope": "openid https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/plus.me"
     },
     "app_name": "Vacay",
     'synchronous': false
