@@ -10,30 +10,22 @@
 	    <div class="row-fluid">
 			<div class="well-content">
 				<div>
-					<table class="table">
-					    <thead>
-					        <tr>
-					            <th>Current Users</th>
-					        </tr>
-					    </thead>
-					    <tbody>
-					        <tr ng-repeat="user in users">
-					            <td>
-					            	<div class="user_listing">
-					            		<img class="pic" ng-src="{{user.pic || 'core/assets/photo.jpg'}}" /><br />
-					            		<span class="name">{{user.name}}</span><br />
-					            		<span class="pill">{{user.roleName || 'Viewer'}}</span>
-					            		<span style="background-color: #3498db" ng-if="is_owner(user)" class="pill ng-binding">Owner</span>
-					            		<div class="pull-right list_menu">
-											<a class="narrow" ng-click="edit_user(user.id)" ng-show="user_permission=='Admin'">edit</a>
-											<a class="narrow" ng-click="show_user(user.id)">show</a>
-											<a class="narrow" confirm on-confirm="del_user(user.id)" ng-show="user_permission=='Admin'"><i class="icon-trash" ></i></a>
-										</div>
-					            	</div>
-					            </td>
-					        </tr>
-					    </tbody>
-					</table>
+					<div class="table">
+
+				        <p style="font-weight: bold">Current User</p>
+		            	<div class="user_listing" ng-repeat="user in users">
+		            		<img class="pic" ng-src="{{user.pic || 'core/assets/photo.jpg'}}" /><br />
+		            		<span class="name">{{user.name}}</span><br />
+		            		<span class="pill">{{user.roleName || 'Viewer'}}</span>
+		            		<span style="background-color: #3498db" ng-if="is_owner(user)" class="pill ng-binding">Owner</span>
+		            		<div class="pull-right list_menu">
+								<a class="narrow" ng-click="edit_user(user.id)" ng-show="user_permission=='Admin'">edit</a>
+								<a class="narrow" ng-click="show_user(user.id)">show</a>
+								<a class="narrow" confirm on-confirm="del_user(user.id)" ng-show="user_permission=='Admin'"><i class="icon-trash" ></i></a>
+							</div>
+		            	</div>
+
+					</div>
 					
 				</div>
 				<div class="form modal fade nimbus_form_modal">
