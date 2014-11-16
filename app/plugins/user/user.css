@@ -1,16 +1,15 @@
 .user_listing {
-	background-color: #fff;
-	height: 200px;
-	padding: 15px 16px;
-	border-radius: 5px;
-	width: 160px;
-	text-align: center;
-	position: relative;
-	float: left;
-	margin-right: 20px;
-	margin-bottom: 20px;
+background-color: #fff;
+height: 300px;
+padding: 15px 16px;
+border-radius: 5px;
+width: 200px;
+text-align: center;
+position: relative;
+float: left;
+margin-right: 20px;
+margin-bottom: 20px;
 }
-
 .user_listing .pic {
 	height: 60px;
 	border-radius: 50%;
@@ -22,25 +21,16 @@
 }
 
 .user_listing .list_menu {
-	display: none;
-	position: absolute;
-	bottom: 0px;
-	width: 160px;
-	left: 0px;
-}
-
-.user_listing .list_menu {
 display: none;
 position: absolute;
 bottom: 0px;
-width: 192px;
+width: 232px;
 left: 0px;
 display: block;
 border-radius: 0px 0px 5px 5px;
 background-color: #888;
 height: 30px;
 }
-
 
 .user_listing .list_menu a {
 width: 33%;

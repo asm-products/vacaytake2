@@ -18,6 +18,10 @@
 		            		<span class="name">{{user.name}}</span><br />
 		            		<span class="pill">{{user.roleName || 'Viewer'}}</span>
 		            		<span style="background-color: #3498db" ng-if="is_owner(user)" class="pill ng-binding">Owner</span>
+		            		<hr />
+		            		<p>Start date: 7/11/2014</p>
+		            		<p>Vacation days per year: 15 days</p>
+		            		<p>Vacation days availible: 5 days</p>
 		            		<div class="pull-right list_menu">
 								<a class="narrow" ng-click="edit_user(user.id)" ng-show="user_permission=='Admin'">edit</a>
 								<a class="narrow" ng-click="show_user(user.id)">show</a>

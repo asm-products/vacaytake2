@@ -11,7 +11,7 @@ define('user',['require', 'core/analytic'],(require, analytic)->
 		init : ()->
 			
 			self = @
-			attributes = ['pid','name', 'role', 'email','pic', 'not_first_login', 'initied', 'rated', 'last_login_time']
+			attributes = ['pid','name', 'role', 'email','pic', 'start_date', 'not_first_login', 'initied', 'rated', 'last_login_time']
 			@_models['user'] = {}
 			foundry.model(name, attributes,(model)->
 				self._models['user'] = model
@@ -37,6 +37,7 @@ define('user',['require', 'core/analytic'],(require, analytic)->
 					foundry._current_owner = user
 
 			inject_controller()
+		
 		check_users : ()->
 			user_model = foundry._models['User']
 			console.log 'user list total :'+Object.keys(foundry._user_list).length+', user model total: '+user_model.all().length
@@ -227,6 +228,9 @@ inject_controller = ()->
 				email : 
 					type : 'input'
 					label : 'Email'
+			  start_date :
+			    type: 'input'
+			    label: 'Start Date'
 				role :
 					type : 'select'
 					label : 'Role'
@@ -236,6 +240,9 @@ inject_controller = ()->
 			create : 'submit()'
 			update : 'update()'
 		$scope.userEditModel = 
+      start_date :
+        type: 'input'
+        label: 'Start Date'		
 			fields: 
 				role :
 					type : 'select'

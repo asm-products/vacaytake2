@@ -8,14 +8,14 @@
       name: 'user',
       _models: {},
       anchor: '#/user',
-      title: 'User',
+      title: 'Employee',
       type: 'plugin',
       order: -12,
       icon: 'icon-user',
       init: function() {
         var attributes, self;
         self = this;
-        attributes = ['pid', 'name', 'role', 'email', 'pic', 'not_first_login', 'initied', 'rated', 'last_login_time'];
+        attributes = ['pid', 'name', 'role', 'email', 'pic', 'start_date', 'not_first_login', 'initied', 'rated', 'last_login_time'];
         this._models['user'] = {};
         foundry.model(name, attributes, function(model) {
           self._models['user'] = model;
@@ -223,7 +223,11 @@
           fields: {
             email: {
               type: 'input',
-              label: 'Email'
+              label: 'Email',
+              start_date: {
+                type: 'input',
+                label: 'Start Date'
+              }
             },
             role: {
               type: 'select',
@@ -238,6 +242,12 @@
           update: 'update()'
         };
         $scope.userEditModel = {
+          start_date: {
+            type: 'input',
+            label: 'Start Date'
+          }
+        };
+        ({
           fields: {
             role: {
               type: 'select',
@@ -250,7 +260,7 @@
           },
           create: 'submit()',
           update: 'update()'
-        };
+        });
         $scope.user_data = {
           name: '',
           email: ''
