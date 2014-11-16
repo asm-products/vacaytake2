@@ -8,7 +8,7 @@
       name: 'user',
       _models: {},
       anchor: '#/user',
-      title: 'Employee',
+      title: 'User',
       type: 'plugin',
       order: -12,
       icon: 'icon-user',
