@@ -2,10 +2,9 @@
 (function() {
   var inject_controller;
 
-  define('user', ['require', 'core/analytic'], function(require, analytic) {
+  define('users', ['require', 'core/analytic'], function(require, analytic) {
     var user_plugin;
     return user_plugin = {
-      name: 'user',
       _models: {},
       anchor: '#/user',
       title: 'User',

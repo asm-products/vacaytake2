@@ -12,7 +12,7 @@
     config = {};
     config.appName = 'Foundry';
     config.plugins = {
-      user: 'app/plugins/user',
+      user: 'app/plugins/users',
       workspace: 'core/plugins/workspace',
       calendar : 'app/plugins/calendar',
       settings : 'app/plugins/settings'
