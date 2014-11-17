@@ -12,9 +12,9 @@ define('users',['require', 'core/analytic'],(require, analytic)->
 			self = @
 			attributes = ['pid','name', 'role', 'email','pic', 'start_date', 'not_first_login', 'initied', 'rated', 'last_login_time']
 			@_models['user'] = {}
-			foundry.model(name, attributes,(model)->
+			foundry.model('User', attributes,(model)->
 				self._models['user'] = model
-				foundry.initialized(self.name)
+				foundry.initialized('users')
 				return
 			)
 			return
@@ -227,9 +227,9 @@ inject_controller = ()->
 				email : 
 					type : 'input'
 					label : 'Email'
-			  start_date :
-			    type: 'input'
-			    label: 'Start Date'
+				start_date :
+					type: 'input'
+					label: 'Start Date'
 				role :
 					type : 'select'
 					label : 'Role'
